@@ -84,8 +84,8 @@ export default function Home(params) {
             padding: 15,
           }}>
           <Image
-            style={{ height: 200, width: 200,  }}
-            source={require('./imgbin_electric-bicycle-mountain-bike-focus-bikes-giant-bicycles-png.png')}
+            style={{ height: 200, width: 150, marginLeft: 10 }}
+            source={require('./Images/watch.png')}
           />
           <Text style={{ color: '#828080', textAlign: 'center' }}>
             Pinarello Bike
