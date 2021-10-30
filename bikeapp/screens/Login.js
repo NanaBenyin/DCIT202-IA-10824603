@@ -31,6 +31,7 @@ export default function Login(params) {
             color: '#333',
             fontSize: 25,
             fontWeight: 'bold',
+            marginTop: 10,
             marginRight: 10,
           }}>
           Welcome to
@@ -61,7 +62,7 @@ export default function Login(params) {
         }}>
         “Jewelry isn’t really my thing, but I’ve always got my eye on people’s
         watches.”{'\n'}
-        <Text style={{ color: '#777', fontSize: 20, fontWeight: 'bold',}}>
+        <Text style={{ color: '#777', fontSize: 20, fontWeight: 'bold' }}>
           ~Clive Owen~
         </Text>
       </Text>
@@ -71,19 +72,21 @@ export default function Login(params) {
         }}
         style={{
           alignSelf: 'center',
-          paddingVertical: 10,
-          paddingHorizontal: 70,
-          width: 290,
+          justifyContent: 'center',
+          paddingVertical: 15,
+          paddingHorizontal: 20,
+          width: 250,
           marginTop: 30,
           alignItems: 'center',
-          borderRadius: 10,
+          borderRadius: 20,
           flexDirection: 'row',
           backgroundColor: '#fd9843',
         }}>
         <Text
           style={{
-            color: 'white',
-            alignSelf: 'center',
+            color: '#fff',
+            fontWeight: 'bold',
+            justifyContent: 'center',
             textAlign: 'center',
             fontSize: 23,
           }}>
