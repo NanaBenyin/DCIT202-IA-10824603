@@ -52,8 +52,19 @@ export default function Login(params) {
         />
       </View>
 
-
-      <Text style={{color: '#333', fontWeight: 'bold', textAlign: 'center'}}>“A gentleman’s choice of timepiece says as much about him as does his Saville Row suit.”</Text>
+      <Text
+        style={{
+          color: '#333',
+          fontWeight: 'bold',
+          textAlign: 'center',
+          fontSize: 17,
+        }}>
+        “Jewelry isn’t really my thing, but I’ve always got my eye on people’s
+        watches.”{'\n'}
+        <Text style={{ color: '#777', fontSize: 20, fontWeight: 'bold',}}>
+          ~Clive Owen~
+        </Text>
+      </Text>
       <TouchableOpacity
         onPress={() => {
           navigation.navigate('Home');
