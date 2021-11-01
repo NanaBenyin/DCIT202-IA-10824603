@@ -120,7 +120,7 @@ export default function Home(params) {
                 justifyContent: 'center',
                 alignSelf: 'center',
               }}
-              source={require('./Images/watch.png')}
+              source={require('./Images/wa-1.png')}
             />
             <Text style={{ color: '#828080', textAlign: 'center' }}>
               Pinarello Bike
@@ -151,7 +151,7 @@ export default function Home(params) {
                 justifyContent: 'center',
                 alignSelf: 'center',
               }}
-              source={require('./Images/watch.png')}
+              source={require('./Images/wa-2.png')}
             />
             <Text style={{ color: '#828080', textAlign: 'center' }}>
               Pinarello Bike
@@ -178,7 +178,7 @@ export default function Home(params) {
                 justifyContent: 'center',
                 alignSelf: 'center',
               }}
-              source={require('./Images/watch.png')}
+              source={require('./Images/wa-3.png')}
             />
             <Text style={{ color: '#828080', textAlign: 'center' }}>
               Pinarello Bike
