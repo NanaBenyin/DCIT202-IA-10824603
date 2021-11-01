@@ -3,6 +3,7 @@ import { View, Text, TouchableOpacity, Image } from 'react-native';
 import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 
 export default function Home(params) {
+   const navigation = params.navigation;
   return (
     <View
       style={{
@@ -74,25 +75,119 @@ export default function Home(params) {
         </View>
       </View>
 
-      <View style={{ marginTop: 30 }}>
-        <View
-          style={{
-            backgroundColor: '#f4f2f2',
-            width: 210,
-            height: 260,
-            borderRadius: 25,
-            padding: 15,
-          }}>
-          <Image
-            style={{ height: 200, width: 150, marginLeft: 10 }}
-            source={require('./Images/watch.png')}
-          />
-          <Text style={{ color: '#828080', textAlign: 'center' }}>
-            Pinarello Bike
-          </Text>
-          <Text style={{ fontWeight: 'bolder', textAlign: 'center'  }}>
-            <Text style={{ color: 'orange', textAlign: 'center'  }}>$</Text> 1,700.00
-          </Text>
+      <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+        <View style={{ marginTop: 30 }}>
+          <View
+            style={{
+              marginRight: 20,
+              backgroundColor: '#f4f2f2',
+              width: 150,
+              height: 260,
+              borderRadius: 25,
+              padding: 15,
+            }}>
+            <Image
+              style={{
+                height: 150,
+                width: 90,
+                justifyContent: 'center',
+                alignSelf: 'center',
+              }}
+              source={require('./Images/watch.png')}
+            />
+            <Text style={{ color: '#828080', textAlign: 'center' }}>
+              Pinarello Bike
+            </Text>
+            <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+              <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
+              1,700.00
+            </Text>
+          </View>
+        </View>
+        <View style={{ marginTop: 30 }}>
+          <View
+            style={{
+              backgroundColor: '#f4f2f2',
+              width: 200,
+              height: 260,
+              borderRadius: 25,
+              padding: 15,
+            }}>
+            <Image
+              style={{
+                height: 170,
+                width: 100,
+                justifyContent: 'center',
+                alignSelf: 'center',
+              }}
+              source={require('./Images/watch.png')}
+            />
+            <Text style={{ color: '#828080', textAlign: 'center' }}>
+              Pinarello Bike
+            </Text>
+            <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+              <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
+              1,700.00
+            </Text>
+          </View>
+        </View>
+      </View>
+
+      <View style={{ flexDirection: 'row', justifyContent: 'center' }}>
+        <View style={{ marginTop: 30 }}>
+          <View
+            style={{
+              backgroundColor: '#f4f2f2',
+              width: 200,
+              height: 260,
+              borderRadius: 25,
+              padding: 15,
+              marginRight: 20,
+            }}>
+            <Image
+              style={{
+                height: 170,
+                width: 100,
+                justifyContent: 'center',
+                alignSelf: 'center',
+              }}
+              source={require('./Images/watch.png')}
+            />
+            <Text style={{ color: '#828080', textAlign: 'center' }}>
+              Pinarello Bike
+            </Text>
+            <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+              <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
+              1,700.00
+            </Text>
+          </View>
+        </View>
+        <View style={{ marginTop: 30 }}>
+          <View
+            style={{
+              backgroundColor: '#f4f2f2',
+              width: 200,
+              height: 260,
+              borderRadius: 25,
+              padding: 15,
+            }}>
+            <Image
+              style={{
+                height: 170,
+                width: 100,
+                justifyContent: 'center',
+                alignSelf: 'center',
+              }}
+              source={require('./Images/watch.png')}
+            />
+            <Text style={{ color: '#828080', textAlign: 'center' }}>
+              Pinarello Bike
+            </Text>
+            <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+              <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
+              1,700.00
+            </Text>
+          </View>
         </View>
       </View>
     </View>
