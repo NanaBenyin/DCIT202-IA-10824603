@@ -19,7 +19,6 @@ export default function Home(params) {
           alignItems: 'center',
         }}>
         <Ionicons name="ios-menu-outline" size={30} color="#000" />
-       
         <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
           <Ionicons
             style={{ marginLeft: 15 }}
