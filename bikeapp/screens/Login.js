@@ -90,7 +90,7 @@ export default function Login(params) {
             textAlign: 'center',
             fontSize: 23,
           }}>
-          Join us Now
+          Join us Now!
         </Text>
       </TouchableOpacity>
     </View>
