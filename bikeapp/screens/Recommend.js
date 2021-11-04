@@ -1,43 +1,92 @@
-import { StatusBar } from "expo-status-bar";
-import React from "react";
-import { Provider } from 'react-native-paper'
-import { StyleSheet, Text, View } from "react-native";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
-import Login from "./screens/Login";
-import Home from "./screens/Home";
-import Recommend from './screens/Recommend';
-import { theme } from './core/theme';
-import {StartScreen} from './screens/StartScreen';
-import{LoginScreen} from './screens/LoginScreen';
-import{RegisterScreen} from './screens/RegisterScreen';
-import{ResetPasswordScreen} from './screens/ResetPasswordScreen';
-import {Dashboard} from './screens/Dashboard';
+import React from 'react';
+import { View, Text, TouchableOpacity, Image } from 'react-native';
+import { Ionicons, FontAwesome, AntDesign } from '@expo/vector-icons';
 
-export default function App() {
-  const MainNavigator = createStackNavigator();
-
+export default function Recommend(params) {
+  const navigation = params.navigation;
   return (
-    <View style={{ flex: 1 }}>
-    <Provider theme={theme}>
-      <NavigationContainer>
-        <MainNavigator.Navigator
-          screenOptions={{ headerShown: false }}
-          // initialRouteName=""
-        >
-          <MainNavigator.Screen name="Login" component={Login} />
-          <MainNavigator.Screen name="Home" component={Home} />
-          <MainNavigator.Screen name="Recommend" component={Recommend} />
-          <MainNavigator.Screen name="LoginScreen" component={LoginScreen} />
-          <MainNavigator.Screen name="RegisterScreen" component={RegisterScreen} />
-           <MainNavigator.Screen name="StartScreen" component={StartScreen} />
-          <MainNavigator.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
-            <MainNavigator.Screen name="Dashboard" component={Dashboard} />
-        </MainNavigator.Navigator>
-      </NavigationContainer>
-      </Provider>
+    <View
+      style={{
+        backgroundColor: 'white',
+        flex: 1,
+        paddingTop: 55,
+        paddingHorizontal: 20,
+      }}>
+      <View
+        style={{
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+        }}>
+        <TouchableOpacity
+          onPress={() => {
+            navigation.navigate('Home');
+          }}>
+          <Ionicons name="arrow-back-outline" size={30} color="#000" />
+        </TouchableOpacity>
+        <View
+          style={{ backgroundColor: '#fda256', padding: 4, borderRadius: 5 }}>
+          <Text style={{ color: '#fff', fontWeight: 'bold', fontSize: 12 }}>
+            Special Watchly Recommendation
+          </Text>
+        </View>
+        <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+          <Ionicons
+            style={{ marginLeft: 15 }}
+            name="cart-outline"
+            size={30}
+            color="#000"
+          />
+        </View>
+      </View>
+
+      <View
+        style={{
+          marginTop: 30,
+          marginRight: 20,
+          backgroundColor: '#f4f2f2',
+          width: 170,
+          height: 260,
+          borderRadius: 25,
+          padding: 15,
+        }}>
+        <Image
+          style={{
+            height: 150,
+            width: 90,
+            justifyContent: 'center',
+            alignSelf: 'center',
+          }}
+          source={require('./Images/wa-4.png')}
+        />
+        <Text style={{ color: '#828080', textAlign: 'center' }}>
+          Schaffhausen{' '}
+        </Text>
+        <Text style={{ fontWeight: 'bolder', textAlign: 'center' }}>
+          <Text style={{ color: 'orange', textAlign: 'center' }}>$</Text>{' '}
+          1,700.00
+        </Text>
+        <View
+          style={{
+            marginTop: 15,
+            backgroundColor: '#fd9843',
+            alignSelf: 'center',
+            borderRadius: 10,
+            paddingVertical: 5,
+            paddingHorizontal: 20,
+          }}>
+          <TouchableOpacity>
+            <Text
+              style={{
+                color: '#fff',
+                fontWeight: 'bold',
+                textAlign: 'center',
+              }}>
+              Add to Cart
+            </Text>
+          </TouchableOpacity>
+        </View>
+      </View>
     </View>
   );
 }
-
-
