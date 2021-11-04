@@ -46,14 +46,19 @@ export default function Home(params) {
             paddingHorizontal: 15,
             borderRadius: 12,
           }}>
-          <TouchableOpacity>
+          <TouchableOpacity   onPress={() => {
+          navigation.navigate('StartScreen');
+        }}>
             <Text style={{ color: 'orange' }}>All</Text>
           </TouchableOpacity>
         </View>
 
         <View
           style={{ backgroundColor: '#f4f2f2', padding: 10, borderRadius: 12 }}>
-          <TouchableOpacity>
+          <TouchableOpacity
+          onPress={() => {
+          navigation.navigate('Recommend');
+        }}>
             <Text style={{ color: '#828080' }}>We Recommend</Text>
           </TouchableOpacity>
         </View>
@@ -79,7 +84,7 @@ export default function Home(params) {
             style={{
               marginRight: 20,
               backgroundColor: '#f4f2f2',
-              width: 160,
+              width: 170,
               height: 260,
               borderRadius: 25,
               padding: 15,
