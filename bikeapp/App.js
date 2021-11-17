@@ -9,6 +9,7 @@ import Home from "./screens/Home";
 import Recommend from './screens/Recommend';
 import Digital from './screens/Digital';
 import Analogue from './screens/Analogue';
+import Cart from './screens/Cart';
 import { theme } from './core/theme'
 import {
   StartScreen,
@@ -35,6 +36,7 @@ export default function App() {
           <MainNavigator.Screen name="Recommend" component={Recommend} />
           <MainNavigator.Screen name="Digital" component={Digital} />
           <MainNavigator.Screen name="Analogue" component={Analogue} />
+          <MainNavigator.Screen name="Cart" component={Cart} />
           <MainNavigator.Screen name="StartScreen" component={StartScreen} />
           <MainNavigator.Screen name="LoginScreen" component={LoginScreen} />
           <MainNavigator.Screen name="ResetPasswordScreen" component={ResetPasswordScreen} />
